@@ -22,13 +22,15 @@ def numbers():
             count += 1
         else:
             if answer == 'yes':
-                print("'yes' is wrong answer ;(. Correct answer was 'no'.\n
-                        Let's try again," + name + "!")
+                print("'yes' is wrong answer ;(.", end=' ')
+                print("Correct answer was 'no'.")
+                print(f"Let's try again, {name}!")
                 break
             else:
-                 print("'no' is wrong answer ;(. Correct answer was 'yes'.\n
-                         Let's try again," + name + "!")
-                 break
+                print("'no' is wrong answer ;(.", end=' ')
+                print("Correct answer was 'yes'.")
+                print(f"Let's try again, {name}!")
+                break
     if count == 3:
         print('Congratulations,' + name + '!')
 

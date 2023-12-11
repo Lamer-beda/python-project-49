@@ -23,27 +23,27 @@ def calcul():
                     print('Correct!')
                     count += 1
                 else:
-                    print(f"'{answer}' is wrong answer ;(." +
-                    f"Correct answer was '{str(rand_num1 + rand_num2)}'\n" +
-                    f"Let's try again, {name}!")
+                    print(f"'{answer}' is wrong answer ;(.", end=' ')
+                    print(f"Correct answer was '{str(rand_num1 + rand_num2)}'.")
+                    print(f"Let's try again, {name}!")
                     break
             case '-':
                 if rand_num1 - rand_num2 == int(answer):
                     print('Correct!')
                     count += 1
                 else:
-                    print(f"'{answer}' is wrong answer ;(." +
-                    f"Correct answer was '{str(rand_num1 - rand_num2)}'\n" +
-                    f"Let's try again, {name}!")
+                    print(f"'{answer}' is wrong answer ;(.", end=' ')
+                    print(f"Correct answer was '{str(rand_num1 - rand_num2)}'.")
+                    print(f"Let's try again, {name}!")
                     break
             case '*':
                 if rand_num1 * rand_num2 == int(answer):
                     print('Correct!')
                     count += 1
                 else:
-                    print(f"'{answer}' is wrong answer ;(." +
-                    f"Correct answer was '{str(rand_num1 * rand_num2)}'\n" +
-                    f"Let's try again, {name}!")
+                    print(f"'{answer}' is wrong answer ;(.", end=' ')
+                    print(f"Correct answer was '{str(rand_num1 * rand_num2)}'.")
+                    print(f"Let's try again, {name}!")
                     break
     if count == 3:
         print(f"Congratulations, {name}!")

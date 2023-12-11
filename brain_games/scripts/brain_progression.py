@@ -26,9 +26,9 @@ def progress():
             print('Correct!')
             count += 1
         else:
-            print(f"'{answer}' is wrong answer ;(." +
-                f"Correct answer was '{answer_game}'\n" +
-                f"Let's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(.", end=' ')
+            print(f"Correct answer was '{answer_game}'.")
+            print(f"Let's try again, {name}!")
             break
     if count == 3:
         print(f"Congratulations, {name}!")

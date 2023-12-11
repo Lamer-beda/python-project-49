@@ -21,9 +21,9 @@ def gcd():
             print('Correct!')
             count += 1
         else:
-            print(f"'{answer}' is wrong answer ;(." +
-            f"Correct answer was '{rand_num1}'\n" +
-            f"Let's try again, {name}!")
+            print(f"'{answer}' is wrong answer ;(.", end=' ')
+            print(f"Correct answer was '{rand_num1}'.")
+            print(f"Let's try again, {name}!")
             break
     if count == 3:
         print(f"Congratulations, {name}!")
