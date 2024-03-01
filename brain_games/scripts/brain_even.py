@@ -1,44 +1,10 @@
 #!/usr/bin/env python3
 
-
-import prompt
-import random
-
-
-def numbers():
-    name = prompt.string('May I have your name? ')
-    print('Hello, ' + name + '!')
-    count = 0
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-    while count != 3:
-        random_number = random.randint(1, 100)
-        print('Question: ' + str(random_number))
-        answer = prompt.string('Your answer: ')
-        if random_number % 2 == 0 and answer == 'yes':
-            print('Correct!')
-            count += 1
-        elif random_number % 2 != 0 and answer == 'no':
-            print('Correct!')
-            count += 1
-        else:
-            if answer == 'yes':
-                print("'yes' is wrong answer ;(.", end=' ')
-                print("Correct answer was 'no'.")
-                print(f"Let's try again, {name}!")
-                break
-            else:
-                print("'no' is wrong answer ;(.", end=' ')
-                print("Correct answer was 'yes'.")
-                print(f"Let's try again, {name}!")
-                break
-    if count == 3:
-        print(f'Congratulations, {name}!')
-
+from brain_games import engine
+from brain_games.games import even
 
 def main():
-    print('Welcome to the Brain Games!')
-    numbers()
-
+    engine.engine_game(even)
 
 if __name__ == '__main__':
     main()
