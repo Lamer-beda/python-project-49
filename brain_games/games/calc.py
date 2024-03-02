@@ -10,9 +10,9 @@ def generate_game():
     quest=f'{str(rand_num1)} {rand_operation} {str(rand_num2)}'
     match rand_operation:
         case '+':
-            answer_game = rand_num1 + rand_num2
+            answer_game = str(rand_num1 + rand_num2)
         case '-':
-            answer_game = rand_num1 - rand_num2
+            answer_game = str(rand_num1 - rand_num2)
         case '*':
-            answer_game = rand_num1 * rand_num2
+            answer_game = str(rand_num1 * rand_num2)
     return quest, answer_game
