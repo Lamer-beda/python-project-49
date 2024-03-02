@@ -1,6 +1,7 @@
 import random
 
-DESCRIPTION='What number is missing in the progression?'
+DESCRIPTION = 'What number is missing in the progression?'
+
 
 def generate_game():
     l_prog = random.randint(5, 10)
@@ -10,5 +11,5 @@ def generate_game():
     index = random.randint(0, len(progression) - 1)
     answer_game = str(progression[index])
     progression[index] = '..'
-    quest=' '.join(map(str, progression))
+    quest = ' '.join(map(str, progression))
     return quest, answer_game

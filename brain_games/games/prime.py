@@ -1,6 +1,7 @@
 import random
 
-DESCRIPTION='Answer "yes" if given number is prime. Otherwise answer "no".'
+DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
 
 def generate_game():
     quest = random.randint(2, 20)

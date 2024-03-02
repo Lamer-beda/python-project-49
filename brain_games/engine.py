@@ -1,5 +1,6 @@
 import prompt
 
+
 def engine_game(game):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
@@ -8,7 +9,7 @@ def engine_game(game):
     print(game.DESCRIPTION)
 
     while count != 3:
-        quest, answer_game=game.generate_game()
+        quest, answer_game = game.generate_game()
         print(f'Question: {quest}')
         answer = prompt.string('Your answer: ')
         if answer == answer_game:
