@@ -8,7 +8,7 @@ def generate_game():
     diff = random.randint(1, 10)
     progression = [f_elem + (i - 1) * diff for i in range(1, l_prog + 1)]
     index = random.randint(0, len(progression) - 1)
-    answer_game = progression[index]
+    answer_game = str(progression[index])
     progression[index] = '..'
     quest=' '.join(map(str, progression))
     return quest, answer_game
