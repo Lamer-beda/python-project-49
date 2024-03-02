@@ -2,7 +2,7 @@ import random
 
 DESCRIPTION='What number is missing in the progression?'
 
-def genrate_game():
+def generate_game():
     l_prog = random.randint(5, 10)
     f_elem = random.randint(1, 50)
     diff = random.randint(1, 10)
