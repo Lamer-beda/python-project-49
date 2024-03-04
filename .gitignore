@@ -3,4 +3,3 @@ dist/
 __pycache__/
 *.pyc
 test1.txt
-brain_games/__pycache__/
