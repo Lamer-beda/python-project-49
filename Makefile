@@ -21,3 +21,17 @@ lint:
 
 brain-calc:
  poetry run brain-calc
+
+brain-even:
+ poetry run brain-even
+
+brain-prime:
+ poetry run brain-prime
+
+brain-gcd:
+ poetry run brain-gcd
+
+brain-progeession:
+ poetry run brain-progression
+
+
