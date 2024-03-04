@@ -1,5 +1,5 @@
 .venv/
 dist/
-__pycache__
+__pycache__/
 *.pyc
 test1.txt
